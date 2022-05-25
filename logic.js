@@ -13,7 +13,6 @@ function validateForm(e) {
     emailEl.classList.add("is-invalid");
     watchInvalidEmail();
     isValidForm = false;
-    return false;
   }
 
   return isValidForm;
