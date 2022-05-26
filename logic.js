@@ -13,9 +13,12 @@ function validateForm(e) {
 
   if (!isValidEmailInput) {
     feedbackEl.innerText = "A valid e-mail is required.";
+    emailEl.parentElement.classList.add("has-validation");
     emailEl.classList.add("is-invalid");
     watchInvalidEmail();
     isValidForm = false;
+  } else {
+    emailEl.parentElement.classList.remove("has-validation");
   }
 
   return isValidForm;

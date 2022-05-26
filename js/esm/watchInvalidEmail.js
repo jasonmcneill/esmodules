@@ -10,8 +10,10 @@ export default function watchInvalidEmail() {
 
       if (inputEl.value.length && !isValidValue) {
         feedbackEl.innerText = isValidMsg;
+        inputEl.parentElement.add("has-validation");
         inputEl.classList.add("is-invalid");
       } else {
+        inputEl.parentElement.classList.remove("has-validation");
         inputEl.classList.remove("is-invalid");
       }
     });

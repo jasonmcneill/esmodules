@@ -24,8 +24,6 @@ export default function getPhrases(pathFromRoot, lang = "en") {
         return phrase;
       });
 
-      console.log(phrases);
-
       phrases.forEach(item => {
         document.querySelectorAll(`[data-i18n='${item.id}']`).forEach((el) => {
           const phraseExists = item.phrase.trim().length ? true : false;
