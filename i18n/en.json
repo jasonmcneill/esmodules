@@ -13,6 +13,20 @@
       "id": "submit",
       "original": "Submit",
       "translated": "Submit"
+    },
+    {
+      "id": "cnn",
+      "original": "CNN",
+      "translated": "CNN",
+      "changes": [
+        {
+          "original": "",
+          "translated": "",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
     }
   ],
   "templates": {
@@ -31,12 +45,7 @@
           "translated": "",
           "bold": false,
           "italic": false,
-          "underline": false,
-          "link": {
-            "href": "",
-            "id": "",
-            "class": ""
-          }
+          "underline": false
         }
       ]
     }
