@@ -43,9 +43,9 @@
         {
           "original": "",
           "translated": "",
-          "bold": false,
-          "italic": false,
-          "underline": false,
+          "bold": true,
+          "italic": true,
+          "underline": true,
           "link": {
             "href": "",
             "id": "",
