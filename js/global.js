@@ -53,9 +53,9 @@ function getLang() {
 }
 
 function getPhrase(phraseid) {
-  for (let i = 0; i < phrases.length; i++) {
-    if (phrases[i].id == phraseid) {
-      const phraseText = phrases[i].phrase;
+  for (let i = 0; i < pagePhrases.length; i++) {
+    if (pagePhrases[i].id == phraseid) {
+      const phraseText = pagePhrases[i].phrase;
       return phraseText;
     }
   }
