@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "path": "",
+    "title": ""
+  },
+  "phrases": [
+    {
+      "id": "emailAddress",
+      "original": "E-mail address",
+      "translated": "E-mail address"
+    },
+    {
+      "id": "submit",
+      "original": "Submit",
+      "translated": "Submit"
+    }
+  ],
+  "templates": {
+    "phraseNoChanges": {
+      "id": "",
+      "original": "",
+      "translated": ""
+    },
+    "phraseWithChanges": {
+      "id": "",
+      "original": "",
+      "translated": "",
+      "changes": [
+        {
+          "original": "",
+          "translated": "",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "link": {
+            "href": "",
+            "id": "",
+            "class": ""
+          }
+        }
+      ]
+    }
+  }
+}

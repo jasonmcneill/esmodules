@@ -1,5 +1,8 @@
 import isValidEmail from "./js/esm/isValidEmail.js";
 import watchInvalidEmail from "./js/esm/watchInvalidEmail.js";
+import getPhrases from "./js/esm/getPhrases.js";
+
+let phrases = [];
 
 function validateForm(e) {
   const emailEl = e.target.email;
@@ -31,6 +34,7 @@ function attachListeners() {
 }
 
 function init() {
+  getPhrases("i18n");
   attachListeners();
 }
 
