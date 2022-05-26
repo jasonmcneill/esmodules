@@ -1,7 +1,7 @@
 export default function getPhrases(pathArg, langArg) {
   const path = pathArg || window.location.pathname;
   const lang = langArg || getLang();
-  const endpoint = `../../${path}/i18n/${lang}.json`;
+  const endpoint = `../..${path}/i18n/${lang}.json`;
 
   return new Promise((resolve, reject) => {
     fetch(endpoint)
