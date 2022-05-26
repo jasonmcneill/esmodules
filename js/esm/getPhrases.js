@@ -16,7 +16,11 @@ export default function getPhrases(pathFromRoot, lang = "en") {
             if (change.link.href && change.link.href.length) {
               const link = change.link;
               changeHTML = `<a href='${link.href}'`;
-              if (link.rel && link.rel.length) changeHTML += ` rel='${link.rel}'`;
+              if (link.rel && link.rel.length) {
+                changeHTML += ` rel='${link.rel}'`;
+              } else if (link.href.startsWith("https://") || link.href.startsWith("http://")) {
+                changeHTML += ` rel='noopener noreferrer'`;
+              }
               if (link.id && link.id.length) changeHTML += ` id='${link.id}'`;
               if (link.class && link.class.length) changeHTML += ` class='${link.class}'`;
               changeHTML += `>${changeText}</a>`;

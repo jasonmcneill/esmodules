@@ -47,10 +47,10 @@
           "italic": false,
           "underline": false,
           "link": {
-            "rel": "noopener noreferrer",
             "href": "",
             "id": "",
-            "class": ""
+            "class": "",
+            "rel": ""
           }
         }
       ]
