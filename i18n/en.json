@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "path": "",
-    "title": ""
+    "description": "Test",
+    "path": "/"
   },
   "phrases": [
     {
@@ -16,15 +16,15 @@
     },
     {
       "id": "cnn",
-      "original": "CNN",
-      "translated": "CNN",
+      "original": "This is linked and this is not.",
+      "translated": "This is linked and this is not.",
       "changes": [
         {
-          "original": "",
-          "translated": "",
-          "bold": false,
-          "italic": false,
-          "underline": false
+          "original": "This is linked",
+          "translated": "This is linked",
+          "link": {
+            "href": "https://cnn.com/"
+          }
         }
       ]
     }
@@ -45,7 +45,13 @@
           "translated": "",
           "bold": false,
           "italic": false,
-          "underline": false
+          "underline": false,
+          "link": {
+            "rel": "noopener noreferrer",
+            "href": "",
+            "id": "",
+            "class": ""
+          }
         }
       ]
     }
