@@ -50,6 +50,10 @@ export default function getPhrases(pathArg, langArg) {
               el.innerHTML = item.phrase;
             }
           });
+
+          document.querySelectorAll(`[data-placeholder-i18n='${item.id}']`).forEach((el) => {
+            el.setAttribute("placeholder", item.phrase);
+          });
         });
 
         return phrases;

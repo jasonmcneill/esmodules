@@ -27,6 +27,11 @@
           }
         }
       ]
+    },
+    {
+      "id": "emailAddress",
+      "original": "E-mail address",
+      "translated": "E-mail address"
     }
   ],
   "templates": {
