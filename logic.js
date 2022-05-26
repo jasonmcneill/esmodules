@@ -2,8 +2,6 @@ import isValidEmail from "./js/esm/isValidEmail.js";
 import watchInvalidEmail from "./js/esm/watchInvalidEmail.js";
 import getPhrases from "./js/esm/getPhrases.js";
 
-let phrases = [];
-
 function validateForm(e) {
   const emailEl = e.target.email;
   const feedbackEl = emailEl.parentElement.querySelector(".invalid-feedback");
@@ -36,8 +34,8 @@ function attachListeners() {
   document.querySelector("#myForm").addEventListener("submit", onSubmit);
 }
 
-function init() {
-  getPhrases("i18n");
+async function init() {
+  pagePhrases = await getPhrases();
   attachListeners();
 }
 
