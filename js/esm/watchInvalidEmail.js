@@ -8,7 +8,7 @@ export default function watchInvalidEmail() {
       const isValidValue = isValidEmail(inputEl.value);
       const isValidMsg = feedbackEl.innerText;
 
-      if (!isValidValue) {
+      if (inputEl.value.length && !isValidValue) {
         feedbackEl.innerText = isValidMsg;
         inputEl.classList.add("is-invalid");
       } else {
