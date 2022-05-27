@@ -32,6 +32,11 @@
       "id": "emailAddress",
       "original": "E-mail address",
       "translated": "E-mail address"
+    },
+    {
+      "id": "pageTitle",
+      "original": "Using Bootstrap with ES Modules",
+      "translated": "Using Bootstrap with ES Modules"
     }
   ],
   "templates": {
