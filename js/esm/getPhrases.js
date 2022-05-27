@@ -22,7 +22,7 @@ export default function getPhrases(pathArg, langArg) {
                 if (link.rel && link.rel.length) {
                   changeHTML += ` rel='${link.rel}'`;
                 } else if (link.href.startsWith("https://") || link.href.startsWith("http://")) {
-                  changeHTML += ` rel='noopener noreferrer'`;
+                  changeHTML += ` rel='noopener noreferrer' target='_blank'`;
                 }
                 if (link.id && link.id.length) changeHTML += ` id='${link.id}'`;
                 if (link.class && link.class.length) changeHTML += ` class='${link.class}'`;
