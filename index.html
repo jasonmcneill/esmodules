@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="pageTitle"></title>
+  <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
 
@@ -22,7 +23,44 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="coordinates">
+        <div class="col col-sm-4 offset-sm-4">
+          <fieldset>
+            <legend>
+              <div class="text-center" data-i18n="coordinates"></div>
+            </legend>
+            <div class="container px-0 py-2">
+              <div class="row">
+                <div class="col">
+                  <div class="form-floating">
+                    <input type="number" class="form-control" id="latitude" data-placeholder-i18n="latitude">
+                    <label for="latitude" data-i18n="latitude"></label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-floating">
+                    <input type="number" class="form-control" id="longitude" data-placeholder-i18n="longitude">
+                    <label for="longitude" data-i18n="longitude"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-4" id="detectcoordinates_container" hidden>
+                <div class="col text-center">
+                  <button type="button" id="detectcoordinates" class="btn btn-sm btn-outline-secondary"
+                    data-i18n="detectMyLocation"></button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="row my-4 coordinates" id="detectcoordinates_container" hidden>
+        <div class="col text-center">
+          <button type="button" id="detectcoordinates" class="btn btn-outline-secondary"
+            data-i18n="detectMyLocation"></button>
+        </div>
+      </div>
+      <div class="row my-2">
         <div class="col col-sm-4 offset-sm-4">
           <p data-i18n="cnn"></p>
           <button class="btn btn-primary" type="submit" data-i18n="submit"></button>

@@ -37,6 +37,26 @@
       "id": "pageTitle",
       "original": "Using Bootstrap with ES Modules",
       "translated": "Using Bootstrap with ES Modules"
+    },
+    {
+      "id": "coordinates",
+      "original": "Coordinates:",
+      "translated": "Coordinates:"
+    },
+    {
+      "id": "latitude",
+      "original": "Latitude",
+      "translated": "Latitude"
+    },
+    {
+      "id": "longitude",
+      "original": "Longitude",
+      "translated": "Longitude"
+    },
+    {
+      "id": "detectMyLocation",
+      "original": "Detect My Location",
+      "translated": "Detect My Location"
     }
   ],
   "templates": {
