@@ -57,6 +57,11 @@
       "id": "detectMyLocation",
       "original": "Detect My Location",
       "translated": "Detect My Location"
+    },
+    {
+      "id": "detectingLocation",
+      "original": "Detecting...",
+      "translated": "Detecting..."
     }
   ],
   "templates": {

@@ -32,6 +32,13 @@ function onDetectLocation() {
   const coordinates = document.querySelector("#coordinates");
   const lat = document.querySelector("#latitude");
   const long = document.querySelector("#longitude");
+  const btnEl = document.querySelector("[data-i18n='detectMyLocation']");
+  const spinner = document.querySelector("#detectcoordinates > .spinner-border");
+
+  const btnText = {
+    default: getPhrase("detectMyLocation"),
+    spinning: getPhrase("detectingLocation")
+  };
 
   const options = {
     enableHighAccuracy: true,
@@ -45,6 +52,9 @@ function onDetectLocation() {
     lat.value = coords.latitude;
     long.value = coords.longitude;
     coordinates.scrollIntoView({ behavior: "smooth" });
+
+    /* spinner.setAttribute("hidden", false); */
+    btnEl.innerText = btnText.default;
   }
 
   const error = (err) => {
@@ -52,7 +62,13 @@ function onDetectLocation() {
 
     lat.value = "";
     long.value = "";
+
+    /* spinner.setAttribute("hidden", false); */
+    btnEl.innerText = btnText.default;
   }
+
+  spinner.removeAttribute("hidden");
+  btnEl.innerText = btnText.spinning;
 
   navigator.geolocation.getCurrentPosition(success, error, options);
 }
