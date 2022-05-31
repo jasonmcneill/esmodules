@@ -53,7 +53,7 @@ function onDetectLocation() {
     long.value = coords.longitude;
     coordinates.scrollIntoView({ behavior: "smooth" });
 
-    /* spinner.setAttribute("hidden", false); */
+    spinner.setAttribute("hidden", false);
     btnEl.innerText = btnText.default;
   }
 
@@ -63,7 +63,7 @@ function onDetectLocation() {
     lat.value = "";
     long.value = "";
 
-    /* spinner.setAttribute("hidden", false); */
+    spinner.setAttribute("hidden", false);
     btnEl.innerText = btnText.default;
   }
 
