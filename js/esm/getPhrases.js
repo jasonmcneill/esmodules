@@ -1,5 +1,5 @@
 export default function getPhrases(pathArg, langArg) {
-  const path = pathArg || window.location.pathname;
+  const path = pathArg || window.location.pathname.split("index.html")[0];
   const lang = langArg || getLang();
   const endpoint = `../..${path}/i18n/${lang}.json`;
 
